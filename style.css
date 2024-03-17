@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* <============================================= Navabar Coding Here Section ====================================> */
+
+nav {
+    width: 100%;
+    height: 120px;
+    padding: 0 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.content .logo img {
+    width: 130px;
+    cursor: pointer;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.content ul li a.active {
+    border-bottom: 3px solid orangered;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 48px;
+    transition: .5s ease;
+}
+.content ul li a:hover{
+    color: rgb(158, 158, 158);
+}
+.content .icon i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* <============================================= herobox Coding Here Section ====================================> */
+
+#herobox {
+    width: 100%;
+    height: 120vh;
+    background: url('./Images/Herobox\ Main\ Image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: -120px;
+    padding: 0 150px;
+    /* background-attachment: fixed; */
+}
+
+#herobox::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -34%, rgba(0, 0, 0, 0.6166841736694677) 0%, rgba(0, 0, 0, 0.5690651260504201) 50%, rgba(24, 40, 49, 1) 100%);
+    position: absolute;
+    left: 0%;
+}
+
+#herobox .main_heading h1 {
+    color: white;
+    z-index: 2;
+    position: absolute;
+    top: 35%;
+    font-size: 6vw;
+    font-weight: 600;
+    width: 20%;
+}
+
+.side-date {
+    width: 15%;
+    height: 22%;
+    position: absolute;
+    right: 0%;
+    top: 35%;
+}
+
+.active-line-of-date {
+    width: 30%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    z-index: 5;
+    right: 0%;
+    top: 50%;
+}
+
+.carousel-1 p {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 35%;
+    top: 40%;
+    transform: translate(0%,0%);
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.carousel-2 p {
+    color: rgba(255, 255, 255, 0.256);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 35%;
+    top: 30%;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.carousel-3 p {
+    color: rgba(255, 255, 255, 0.256);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 35%;
+    top: 20%;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.carousel-4 p {
+    color: rgba(255, 255, 255, 0.256);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 35%;
+    top: 62%;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.carousel-5 p {
+    color: rgba(255, 255, 255, 0.256);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 35%;
+    top: 72%;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.herobox-footer {
+    width: 82%;
+    height: 15%;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.256);
+}
+
+.content_1 {
+    width: 30%;
+    height: 100%;
+    border-bottom: 2px solid orangered;
+}
+
+.content_1 p {
+    color: rgba(255, 255, 255, 0.704);
+    line-height: 25px;
+}
+
+.content_1 a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+}
+.content_1 a:hover i{
+    margin: 0 12px;
+}
+.content_1 a i {
+    font-size: 15px;
+    margin: 0 8px;
+    transition: .5s ease;
+}
+
+.content_2 {
+    width: 30%;
+    height: 100%;
+}
+
+.content_2 p {
+    color: rgba(255, 255, 255, 0.704);
+    line-height: 25px;
+}
+
+.content_2 a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+}
+.content_2 a:hover i{
+    margin: 0 12px;
+}
+.content_2 a i {
+    font-size: 15px;
+    margin: 0 8px;
+    transition: .5s ease;
+}
+
+.content_3 {
+    width: 30%;
+    height: 100%;
+}
+
+.content_3 p {
+    color: rgba(255, 255, 255, 0.704);
+    line-height: 25px;
+}
+
+.content_3 a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+}
+.content_3 a:hover i{
+    margin: 0 12px;
+}
+.content_3 a i {
+    font-size: 15px;
+    margin: 0 8px;
+    transition: .5s ease;
+}
+
+/* <============================================= Section-1 Section ====================================> */
+
+#section-1 {
+    width: 100%;
+    height: 120vh;
+    background-color: #182831;
+    position: relative;
+    padding: 0 150px;
+}
+
+#section-1 .main-content p {
+    color: white;
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section-1 .main-content h1 {
+    color: white;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+
+.card-container {
+    width: 80%;
+    height: 43%;
+    position: absolute;
+    top: 34%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_1 {
+    width: 24%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.307);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.157);
+    cursor: pointer;
+}
+
+.card_1:hover img{
+    transform: scale(1.1);
+}
+
+.card_1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) -34%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.773546918767507) 100%);
+    position: absolute;
+    z-index: 5;
+}
+.card_1 h1{
+    color: white;
+    position: absolute;
+    z-index: 6;
+    font-size: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16%;
+}
+.card_1 p{
+    color: white;
+    position: absolute;
+    z-index: 6;
+    font-size: 13px;
+    left: 23%;
+    bottom: 10%;
+    width: 100%;
+}
+.card_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: .5s ease;
+}
+
+.card_2 {
+    width: 24%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.307);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.157);
+    cursor: pointer;
+}
+.card_2:hover img{
+    transform: scale(1.1);
+}
+.card_2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) -34%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.773546918767507) 100%);
+    position: absolute;
+    z-index: 5;
+}
+.card_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: .5s ease;
+}
+.card_2 h1{
+    color: white;
+    position: absolute;
+    z-index: 6;
+    font-size: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16%;
+}
+.card_2 p{
+    color: white;
+    position: absolute;
+    z-index: 6;
+    font-size: 13px;
+    left: 23%;
+    bottom: 10%;
+    width: 100%;
+}
+.card_3 {
+    width: 24%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.307);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.157);
+    cursor: pointer;
+}
+.card_3:hover img{
+    transform: scale(1.1);
+}
+
+.card_3::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) -34%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.773546918767507) 100%);
+    position: absolute;
+    z-index: 5;
+}
+.card_3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s ease;
+}
+.card_3 h1{
+    color: white;
+    position: absolute;
+    z-index: 6;
+    font-size: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16%;
+}
+.card_3 p{
+    color: white;
+    position: absolute;
+    z-index: 6;
+    font-size: 13px;
+    left: 23%;
+    bottom: 10%;
+    width: 100%;
+}
+
+.card_4 {
+    width: 24%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.307);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.157);
+    cursor: pointer;
+}
+.card_4:hover img{
+    transform: scale(1.1);
+}
+.card_4::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) -34%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.773546918767507) 100%);
+    position: absolute;
+    z-index: 5;
+}
+.card_4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s ease;
+}
+.card_4 h1{
+    color: white;
+    position: absolute;
+    z-index: 6;
+    font-size: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16%;
+}
+.card_4 p{
+    color: white;
+    position: absolute;
+    z-index: 6;
+    font-size: 13px;
+    left: 23%;
+    bottom: 10%;
+    width: 100%;
+}
+
+/* <============================================= Footer Section ====================================> */
+
+#footer-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 150px;
+    overflow: hidden;
+}
+.music{
+    position: absolute;
+    z-index: -1;
+}
+.main-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+}
+.main-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.mountains{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+}
+#footer-section h1{
+    color: white;
+    font-size: 4vw;
+    width: 30%;
+    position: absolute;
+    top: 15%;
+}
+#footer-section .bottom_p p{
+    color: white;
+    width: 32%;
+    position: absolute;
+    bottom: 20%;
+}
+.play_btn{
+    color: white;   
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+}
+.play_btn i{
+    border: 2px solid white;
+    font-size: 30px; 
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.play_btn i:hover{
+    background-color: white;
+    color: #182831;
+}
+#footer-section .play_btn p{
+    width: 100%;
+    font-size: 30px;
+    margin: 0 10px;
+}
+.video-box{
+    width: 40%;
+    height: 27%;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.video_1{
+    width: 48%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.video_1 i{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid white;
+    font-size: 30px; 
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+    z-index: 50;
+}
+.video_1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.video_2{
+    width: 48%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.video_2 i{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid white;
+    font-size: 30px; 
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+    z-index: 50;
+}
+.video_2 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
